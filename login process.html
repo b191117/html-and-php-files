@@ -1,0 +1,16 @@
+<?php
+include("db_connect.php")
+if(isset($_POST["sign up"]))
+{
+$username=$_POST["username"];
+$password=$_POST["password"];
+$email=$_POST["Email];
+$query=$_"insert into login(username,password,email) values($username,$password,$email)";
+if(mysquli_query($conn,$query)
+{
+echo "registration successful" 
+}
+esle
+{
+echo "registration unsuccessful"
+}
